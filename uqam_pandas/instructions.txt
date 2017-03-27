@@ -1,0 +1,38 @@
+INSTRUCTIONS POUR UTILISER PANDAS AVEC CLOUD9
+
+Un peu complexe, j'en conviens. Si vous avez à nouveau à utiliser pandas dans votre carrière, il serait peut-être une bonne idée d'installer python3 dans votre ordinateur, puis d'installer pandas selon les instructions décrites ici : http://pandas.pydata.org/pandas-docs/stable/install.html
+
+EN ATTENDANT, VOICI CE QU'IL FAUT FAIRE (les instructions ci-dessous sont inspirées de Hans Zimermann [https://stackoverflow.com/questions/31598883/installing-python-module-pandas-in-cloud9])
+
+1. Allez chercher les fichiers que j'ai préparés pour vous au http://bit.ly/jhroypandas
+
+2. Téléversez-les (uploader) dans votre espace de travail sur Cloud9.
+
+3. Dans le terminal, entrez la commande suivante: bash pandas1.sh (script bash qui installe un environnement de travail appelé «miniconda»)
+	- suivez les instructions
+	- quand vous voyez «--More--», appuyez sur la barre d'espacement
+	- répondez «yes» quand on vous le demande
+	- quand vous retrouvez l'invite de commande, fermez cette fenêtre de terminal
+	- ouvrez-en une autre
+
+4. Dans cette nouvelle fenêtre de terminal, entrez la commande suivante: bash pandas2.sh (script bash qui installe les modules nécessaires)
+	- répondez «y» quand on vous le demande
+	- patientez (c'est la partie la plus longue)
+
+5. Quand vous retrouvez l'invite de commande, entrez maintenant: bash pandas3.sh (script bash qui démarre un serveur Jupyter)
+
+6. Dans la fenêtre de terminal, vous devriez voir un URL commençant par «http://0.0.0.0:8080/?»
+	Cliquez dessus
+
+7. Vous devriez voir apparaître un nouvel onglet. Allez-y. Vous êtes dans votre serveur Jupyter. Cliquez sur «New» (boîte à droite) et choisissez «Python 3» dans la section «Notebooks».
+
+8. Un nouvel onglet devrait encore apparaître. Allez-y. Vous êtes dans un nouveau carnet (notebook). Changez le «Untitled» pour un nom plus significatif.
+
+
+9. Dans la première cellule, entrez ces quatre lignes:
+	%matplotlib inline
+	import pandas as pd
+	import numpy as np
+	import matplotlib as mp
+
+10. Cliquez sur le bouton qui ressemble au bouton «play» (le 8e à partir de la gauche). Vous devriez voir le In [ ] changer pour In [1]. Cela veut dire que le code que vous avez entré est exécuté.
